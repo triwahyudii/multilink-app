@@ -148,7 +148,7 @@
                 <div class="card h-100 border-0">
                     <div class="card-body text-center">
                         <div class="d-grid gap-2 pt-1">
-                            <a href="#" class="btn btn-primary btn-lg">Riwayat</a>
+                            <a href="{{ url('riwayat') }}" class="btn btn-primary btn-lg">Riwayat</a>
                         </div>
                     </div>
                 </div>

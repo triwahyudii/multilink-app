@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TransferController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,14 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//RIWAYAT USER
+Route::get('riwayat', function() {
+    return view('riwayat.list');
+});
+
+//USER TRANSFER
+Route::get('transfer', function() {
+    return view('transfer.add');
+});
+Route::get('riwayat/transfer', [TransferController::class, 'index']);
