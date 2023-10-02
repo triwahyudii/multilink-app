@@ -28,7 +28,5 @@ Route::get('riwayat', function() {
 });
 
 //USER TRANSFER
-Route::get('transfer', function() {
-    return view('transfer.add');
-});
 Route::get('riwayat/transfer', [TransferController::class, 'index']);
+Route::get('transfer', [TransferController::class, 'create']);

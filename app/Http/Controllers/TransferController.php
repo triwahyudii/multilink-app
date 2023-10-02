@@ -13,7 +13,7 @@ class TransferController extends Controller
     public function index()
     {
         $data = Transfer::all();
-        return view('riwayat.transfer.index');
+        return view('transfer.index', compact(['data']));
     }
 
     /**
@@ -21,7 +21,7 @@ class TransferController extends Controller
      */
     public function create()
     {
-        //
+        return view('transfer.create');
     }
 
     /**
