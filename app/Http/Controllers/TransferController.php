@@ -29,7 +29,8 @@ class TransferController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Transfer::create($request->except(['_token']));
+        return redirect('/home');
     }
 
     /**
@@ -37,7 +38,8 @@ class TransferController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $data = Transfer::find($id);
+        return view('transfer.show', compact(['data']));
     }
 
     /**

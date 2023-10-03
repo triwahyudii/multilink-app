@@ -30,3 +30,5 @@ Route::get('riwayat', function() {
 //USER TRANSFER
 Route::get('riwayat/transfer', [TransferController::class, 'index']);
 Route::get('transfer', [TransferController::class, 'create']);
+Route::post('transfer/store', [TransferController::class, 'store']);
+Route::get('riwayat/transfer/{id}', [TransferController::class, 'show']);

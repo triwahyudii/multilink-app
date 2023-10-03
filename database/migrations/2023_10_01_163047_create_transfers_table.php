@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('transfers', function (Blueprint $table) {
             $table->id();
-            $table->string('bank');
+            $table->enum('bank', ['BRI', 'BCA', 'BNI', 'MANDIRI']);
             $table->string('name');
             $table->string('rekening');
             $table->string('total');

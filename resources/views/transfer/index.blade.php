@@ -18,10 +18,10 @@
                     @foreach($data as $item)
                     <tr>
                         <td>{{$item['name']}}</td>
-                        <td>{{$item['total']}}</td>
+                        <td>Rp {{number_format($item['total'], 0, ',', '.')}}</td>
                         <td>{{$item['name_penerima']}}</td>
                         <td>
-                            <a href="#" class="btn btn-warning">Lihat</a>
+                            <a href="{{ url('riwayat/transfer/'.$item['id']) }}" class="btn btn-warning">Lihat</a>
                         </td>
                     </tr>
                     @endforeach
