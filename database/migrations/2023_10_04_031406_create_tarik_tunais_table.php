@@ -11,14 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('transfers', function (Blueprint $table) {
+        Schema::create('tarik_tunais', function (Blueprint $table) {
             $table->id();
             $table->enum('bank', ['BRI', 'BCA', 'BNI', 'MANDIRI']);
             $table->string('name');
             $table->string('rekening');
-            $table->string('total');
-            $table->string('name_penerima');
-            $table->string('rekening_penerima');
+            $table->bigInteger('total');
             $table->enum('status', ['Proses', 'Batal', 'Selesai']);
             $table->timestamps();
         });
@@ -29,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('transfers');
+        Schema::dropIfExists('tarik_tunais');
     }
 };

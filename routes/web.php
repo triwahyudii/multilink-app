@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TarikTunaiController;
 use App\Http\Controllers\TransferController;
 use Illuminate\Support\Facades\Route;
 
@@ -32,3 +33,9 @@ Route::get('riwayat/transfer', [TransferController::class, 'index']);
 Route::get('transfer', [TransferController::class, 'create']);
 Route::post('transfer/store', [TransferController::class, 'store']);
 Route::get('riwayat/transfer/{id}', [TransferController::class, 'show']);
+
+//USER TARIK TUNAI
+Route::get('riwayat/tarik-tunai', [TarikTunaiController::class, 'index']);
+Route::get('tarik-tunai', [TarikTunaiController::class, 'create']);
+Route::post('tarik-tunai/store', [TarikTunaiController::class, 'store']);
+Route::get('riwayat/tarik-tunai/{id}', [TarikTunaiController::class, 'show']);
