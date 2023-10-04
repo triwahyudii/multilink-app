@@ -47,4 +47,12 @@ Route::get('setor-tunai', [SetorTunaiController::class, 'create']);
 Route::post('setor-tunai/store', [SetorTunaiController::class, 'store']);
 Route::get('riwayat/setor-tunai/{id}', [SetorTunaiController::class, 'show']);
 
+//USER BAYAR CICILAN
+Route::get('riwayat/bayar-cicilan', function() {
+    return view('riwayat.bayar-cicilan');
+});
+Route::get('bayar-cicilan', function() {
+    return view('riwayat.user-bayar-cicilan');
+});
+
 //USER BAYAR CICILAN BANK
