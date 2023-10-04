@@ -2,10 +2,10 @@
 
 @section('content')
 <div class="container">
-    <h1 class="badge text-bg-warning">Tarik Tunai</h1>
+    <h1 class="badge text-bg-warning">Setor Tunai</h1>
     <div class="card rounded-4">
         <div class="bg-body-secondary rounded-4">
-            <form action="{{ url('tarik-tunai/store') }}" method="post">
+            <form action="{{ url('setor-tunai/store') }}" method="post">
                 @csrf
                 <div class="p-2">
                     <select name="bank" id="bank" class="form-select">

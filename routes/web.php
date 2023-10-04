@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SetorTunaiController;
 use App\Http\Controllers\TarikTunaiController;
 use App\Http\Controllers\TransferController;
 use Illuminate\Support\Facades\Route;
@@ -39,3 +40,11 @@ Route::get('riwayat/tarik-tunai', [TarikTunaiController::class, 'index']);
 Route::get('tarik-tunai', [TarikTunaiController::class, 'create']);
 Route::post('tarik-tunai/store', [TarikTunaiController::class, 'store']);
 Route::get('riwayat/tarik-tunai/{id}', [TarikTunaiController::class, 'show']);
+
+//USER SETOR TUNAI
+Route::get('riwayat/setor-tunai', [SetorTunaiController::class, 'index']);
+Route::get('setor-tunai', [SetorTunaiController::class, 'create']);
+Route::post('setor-tunai/store', [SetorTunaiController::class, 'store']);
+Route::get('riwayat/setor-tunai/{id}', [SetorTunaiController::class, 'show']);
+
+//USER BAYAR CICILAN BANK
