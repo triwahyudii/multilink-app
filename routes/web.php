@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CicilanBank;
 use App\Http\Controllers\CicilanBankController;
+use App\Http\Controllers\CicilanLeasingController;
 use App\Http\Controllers\SetorTunaiController;
 use App\Http\Controllers\TarikTunaiController;
 use App\Http\Controllers\TransferController;
@@ -62,3 +63,9 @@ Route::get('riwayat/cicilan-bank', [CicilanBankController::class, 'index']);
 Route::get('cicilan-bank', [CicilanBankController::class, 'create']);
 Route::post('cicilan-bank/store', [CicilanBankController::class, 'store']);
 Route::get('riwayat/cicilan-bank/{id}', [CicilanBankController::class, 'show']);
+
+//USER BAYAR CICILAN LEASING
+Route::get('riwayat/cicilan-leasing', [CicilanLeasingController::class, 'index']);
+Route::get('cicilan-leasing', [CicilanLeasingController::class, 'create']);
+Route::post('cicilan-leasing/store', [CicilanLeasingController::class, 'store']);
+Route::get('riwayat/cicilan-leasing/{id}', [CicilanLeasingController::class, 'show']);
