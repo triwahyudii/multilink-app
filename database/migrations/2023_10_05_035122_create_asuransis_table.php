@@ -14,19 +14,19 @@ return new class extends Migration
         Schema::create('asuransis', function (Blueprint $table) {
             $table->id();
             $table->string('ktp');
-            $table->string('nama');
-            $table->enum('jenis_kelamin', ['L', 'P']);
+            $table->string('kk');
+            $table->string('name');
+            $table->string('phone');
+            $table->string('email');
             $table->string('tempat_lahir');
             $table->date('tanggal_lahir');
+            $table->enum('jenis_kelamin', ['Laki-laki', 'Perempuan']);
             $table->enum('status_pernikahan', ['Menikah', 'Lajang', 'Cerai']);
-            $table->string('handphone');
-            $table->string('email');
-            $table->string('negara');
-            $table->integer('kelas');
             $table->text('alamat');
             $table->integer('kode_pos');
-            $table->string('kk');
-            $table->enum('status_keluarga', ['KP', 'Istri', 'Anak']);
+            $table->string('negara');
+            $table->enum('kelas', ['1', '2', '3']);
+            $table->enum('status_keluarga', ['Kepala', 'Istri', 'Anak']);
             $table->integer('jumlah_anak');
             $table->string('nomor_rekening');
             $table->string('pemilik_rekening');

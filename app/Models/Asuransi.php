@@ -10,12 +10,12 @@ class Asuransi extends Model
     use HasFactory;
     protected $fillable = [
         'ktp',
-        'nama',
+        'name',
         'jenis_kelamin',
         'tempat_lahir',
         'tanggal_lahir',
         'status_pernikahan',
-        'handphone',
+        'phone',
         'email',
         'negara',
         'kelas',

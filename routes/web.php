@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AsuransiController;
 use App\Http\Controllers\CicilanBank;
 use App\Http\Controllers\CicilanBankController;
 use App\Http\Controllers\CicilanLeasingController;
@@ -69,3 +70,9 @@ Route::get('riwayat/cicilan-leasing', [CicilanLeasingController::class, 'index']
 Route::get('cicilan-leasing', [CicilanLeasingController::class, 'create']);
 Route::post('cicilan-leasing/store', [CicilanLeasingController::class, 'store']);
 Route::get('riwayat/cicilan-leasing/{id}', [CicilanLeasingController::class, 'show']);
+
+//USER ASURANSI
+Route::get('riwayat/asuransi', [AsuransiController::class, 'index']);
+Route::get('asuransi', [AsuransiController::class, 'create']);
+Route::post('asuransi/store', [AsuransiController::class, 'store']);
+Route::get('riwayat/asuransi/{id}', [AsuransiController::class, 'show']);
