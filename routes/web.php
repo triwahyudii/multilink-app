@@ -7,6 +7,7 @@ use App\Http\Controllers\CicilanLeasingController;
 use App\Http\Controllers\PulsaController;
 use App\Http\Controllers\SetorTunaiController;
 use App\Http\Controllers\TarikTunaiController;
+use App\Http\Controllers\TopupController;
 use App\Http\Controllers\TransferController;
 use Illuminate\Support\Facades\Route;
 
@@ -83,3 +84,9 @@ Route::get('pulsa', [PulsaController::class, 'index']);
 Route::get('pulsa/create', [PulsaController::class, 'create']);
 Route::post('pulsa/store', [PulsaController::class, 'store']);
 Route::get('pulsa/{id}', [PulsaController::class, 'show']);
+
+//USER TOPUP
+Route::get('topup', [TopupController::class, 'index']);
+Route::get('topup/create', [TopupController::class, 'create']);
+Route::post('topup/store', [TopupController::class, 'store']);
+Route::get('topup/{id}', [TopupController::class, 'show']);

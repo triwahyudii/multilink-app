@@ -40,7 +40,7 @@
                     </a>
                 </div>
                 <div class="row p-1">
-                    <a href="{{url('riwayat/topup')}}" class="btn btn-outline-primary text-black">
+                    <a href="{{url('topup')}}" class="btn btn-outline-primary text-black">
                         Top Up
                     </a>
                 </div>
