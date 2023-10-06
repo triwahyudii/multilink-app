@@ -89,7 +89,7 @@
                             </div>
 
                             <div class="col-4 col-sm-6 col-md-4 col-lg-3 p-2">
-                                <a href="{{url('pulsa')}}" class="text-decoration-none">
+                                <a href="{{url('pulsa/create')}}" class="text-decoration-none">
                                     <div class="card h-100 border-0">
                                         <div class="card-body text-center">
                                             <img src="{{ asset('assets/images/Pulsa.png') }}" alt="Pulsa" class="img-fluid">

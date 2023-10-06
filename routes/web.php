@@ -4,6 +4,7 @@ use App\Http\Controllers\AsuransiController;
 use App\Http\Controllers\CicilanBank;
 use App\Http\Controllers\CicilanBankController;
 use App\Http\Controllers\CicilanLeasingController;
+use App\Http\Controllers\PulsaController;
 use App\Http\Controllers\SetorTunaiController;
 use App\Http\Controllers\TarikTunaiController;
 use App\Http\Controllers\TransferController;
@@ -76,3 +77,9 @@ Route::get('riwayat/asuransi', [AsuransiController::class, 'index']);
 Route::get('asuransi', [AsuransiController::class, 'create']);
 Route::post('asuransi/store', [AsuransiController::class, 'store']);
 Route::get('riwayat/asuransi/{id}', [AsuransiController::class, 'show']);
+
+//USER PULSA
+Route::get('pulsa', [PulsaController::class, 'index']);
+Route::get('pulsa/create', [PulsaController::class, 'create']);
+Route::post('pulsa/store', [PulsaController::class, 'store']);
+Route::get('pulsa/{id}', [PulsaController::class, 'show']);

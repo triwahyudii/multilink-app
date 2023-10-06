@@ -30,7 +30,7 @@
                     </a>
                 </div>
                 <div class="row p-1">
-                    <a href="{{url('riwayat/pulsa')}}" class="btn btn-outline-primary text-black">
+                    <a href="{{url('pulsa')}}" class="btn btn-outline-primary text-black">
                         Pulsa
                     </a>
                 </div>
