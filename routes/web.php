@@ -4,6 +4,7 @@ use App\Http\Controllers\AsuransiController;
 use App\Http\Controllers\CicilanBank;
 use App\Http\Controllers\CicilanBankController;
 use App\Http\Controllers\CicilanLeasingController;
+use App\Http\Controllers\PlnController;
 use App\Http\Controllers\PulsaController;
 use App\Http\Controllers\SetorTunaiController;
 use App\Http\Controllers\TarikTunaiController;
@@ -90,3 +91,9 @@ Route::get('topup', [TopupController::class, 'index']);
 Route::get('topup/create', [TopupController::class, 'create']);
 Route::post('topup/store', [TopupController::class, 'store']);
 Route::get('topup/{id}', [TopupController::class, 'show']);
+
+//USER PLN
+Route::get('pln', [PlnController::class, 'index']);
+Route::get('pln/create', [PlnController::class, 'create']);
+Route::post('pln/store', [PlnController::class, 'store']);
+Route::get('pln/{id}', [PlnController::class, 'show']);

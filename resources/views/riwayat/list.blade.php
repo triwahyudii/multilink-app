@@ -35,7 +35,7 @@
                     </a>
                 </div>
                 <div class="row p-1">
-                    <a href="{{url('riwayat/pln')}}" class="btn btn-outline-primary text-black">
+                    <a href="{{url('pln')}}" class="btn btn-outline-primary text-black">
                         PLN
                     </a>
                 </div>

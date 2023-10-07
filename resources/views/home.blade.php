@@ -82,7 +82,7 @@
                                     <div class="card h-100 border-0">
                                         <div class="card-body text-center">
                                             <img src="{{ asset('assets/images/Bank.png') }}" alt="Bank" class="img-fluid" style="filter:blur(3px);">
-                                            <h5 class="card-title pt-2 mb-0" style="font-size: 13px;">Pengajuan Pinjaman</h5>
+                                            <h5 class="card-title pt-2 mb-0" style="font-size: 14px;">Pinjaman</h5>
                                         </div>
                                     </div>
                                 </a>
@@ -100,7 +100,7 @@
                             </div>
 
                             <div class="col-4 col-sm-6 col-md-4 col-lg-3 p-2">
-                                <a href="{{url('pln')}}" class="text-decoration-none">
+                                <a href="{{url('pln/create')}}" class="text-decoration-none">
                                     <div class="card h-100 border-0">
                                         <div class="card-body text-center">
                                             <img src="{{ asset('assets/images/Pln.png') }}" alt="Pln" class="img-fluid">
