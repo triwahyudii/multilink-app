@@ -97,3 +97,8 @@ Route::get('pln', [PlnController::class, 'index']);
 Route::get('pln/create', [PlnController::class, 'create']);
 Route::post('pln/store', [PlnController::class, 'store']);
 Route::get('pln/{id}', [PlnController::class, 'show']);
+
+//ADMIN
+Route::get('/admin', function() {
+    return view('layouts.admin');
+});
