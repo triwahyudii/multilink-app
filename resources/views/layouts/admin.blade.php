@@ -116,20 +116,13 @@
                         </li>
 
                         <!-- PLN -->
-                        <li class="sidebar-item  has-sub">
-                            <a href="#" class='sidebar-link'>
+                        <li class="sidebar-item">
+                            <a href="{{ url('/admin/pln/') }}" class='sidebar-link'>
                                 <i class="fa-solid fa-bolt-lightning fs-4"></i>
                                 <span>PLN</span>
                             </a>
-                            <ul class="submenu ">
-                                <li class="submenu-item ">
-                                    <a href="{{ url('/admin/tagihan-listrik/') }}">Tagihan Listrik</a>
-                                </li>
-                                <li class="submenu-item ">
-                                    <a href="{{ url('/admin/token-listrik/') }}">Token Listrik</a>
-                                </li>
-                            </ul>
                         </li>
+
 
                         <!-- TOPUP -->
                         <li class="sidebar-item">
@@ -168,8 +161,8 @@
 
             </div>
         </div>
-         <!-- CONTENT -->
-         <div id="main">
+        <!-- CONTENT -->
+        <div id="main">
             <section class="section">
                 <div class="container">
                     <div class="col-12">

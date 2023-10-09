@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminTransferController;
 use App\Http\Controllers\AsuransiController;
 use App\Http\Controllers\CicilanBank;
 use App\Http\Controllers\CicilanBankController;
@@ -98,7 +99,9 @@ Route::get('pln/create', [PlnController::class, 'create']);
 Route::post('pln/store', [PlnController::class, 'store']);
 Route::get('pln/{id}', [PlnController::class, 'show']);
 
-//ADMIN
+//ADMIN PAGES
 Route::get('/admin', function() {
     return view('layouts.admin');
 });
+
+Route::get('admin/transfer', [AdminTransferController::class, 'index']);
