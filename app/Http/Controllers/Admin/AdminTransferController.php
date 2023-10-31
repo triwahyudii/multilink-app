@@ -40,8 +40,7 @@ class AdminTransferController extends Controller
         ]);
 
         Transfer::create($data);
-        session()->flash('success', 'Data berhasil ditambahkan!', 3000);
-        return redirect('/admin/transfer');
+        return redirect('/admin/transfer')->with('success', 'Data berhasil ditambahkan!');
     }
 
     /**
@@ -57,7 +56,8 @@ class AdminTransferController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $data = Transfer::find($id);
+        return view('admin.transfer.edit', compact(['data']));
     }
 
     /**
