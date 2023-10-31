@@ -48,7 +48,8 @@ class AdminTransferController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $data = Transfer::find($id);
+        return view('admin.transfer.show', compact(['data']));
     }
 
     /**
@@ -65,7 +66,9 @@ class AdminTransferController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $data = Transfer::find($id);
+        $data->update($request->all());
+        return redirect('/admin/transfer');
     }
 
     /**
@@ -73,6 +76,8 @@ class AdminTransferController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $data = Transfer::find($id);
+        $data->delete();
+        return redirect('/admin/transfer');
     }
 }

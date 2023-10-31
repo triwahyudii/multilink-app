@@ -33,10 +33,10 @@
                     <table class="table table-hover mb-0">
                         <thead>
                             <tr>
-                               <th>Nama Pengirim</th>
-                               <th>Nomor Rekening</th>
-                               <th>Total</th>
-                               <th>Nama Penerima</th>
+                                <th>Nama Pengirim</th>
+                                <th>Nomor Rekening</th>
+                                <th>Total</th>
+                                <th>Nama Penerima</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
