@@ -22,7 +22,7 @@ class AdminTransferController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.transfer.create');
     }
 
     /**
@@ -30,7 +30,18 @@ class AdminTransferController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->validate([
+            'bank' => 'required',
+            'name' => 'required',
+            'rekening' => 'required',
+            'total' => 'required',
+            'name_penerima' => 'required',
+            'rekening_penerima' => 'required',
+        ]);
+
+        Transfer::create($data);
+        session()->flash('success', 'Data berhasil ditambahkan!', 3000);
+        return redirect('/admin/transfer');
     }
 
     /**

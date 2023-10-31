@@ -104,4 +104,7 @@ Route::get('/admin', function() {
     return view('layouts.admin');
 });
 
+//ADMIN TRANSFER
 Route::get('admin/transfer', [AdminTransferController::class, 'index']);
+Route::get('admin/transfer/create', [AdminTransferController::class, 'create']);
+Route::post('admin/transfer/store', [AdminTransferController::class, 'store']);
