@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminTarikController;
 use App\Http\Controllers\Admin\AdminTransferController;
 use App\Http\Controllers\AsuransiController;
 use App\Http\Controllers\CicilanBank;
@@ -114,3 +115,10 @@ Route::delete('admin/transfer/{id}', [AdminTransferController::class, 'destroy']
 Route::get('admin/transfer/{id}', [AdminTransferController::class, 'show']);
 
 //ADMIN TARIK TUNAI
+Route::get('admin/tarik-tunai', [AdminTarikController::class, 'index']);
+Route::get('admin/tarik-tunai/create', [AdminTarikController::class, 'create']);
+Route::post('admin/tarik-tunai/store', [AdminTarikController::class, 'store']);
+Route::get('admin/tarik-tunai/edit/{id}', [AdminTarikController::class, 'edit']);
+Route::put('admin/tarik-tunai/{id}', [AdminTarikController::class, 'update']);
+Route::delete('admin/tarik-tunai/{id}', [AdminTarikController::class, 'destroy']);
+Route::get('admin/tarik-tunai/{id}', [AdminTarikController::class, 'show']);

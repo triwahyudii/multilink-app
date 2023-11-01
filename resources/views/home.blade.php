@@ -77,7 +77,7 @@
                                 </a>
                             </div>
 
-                            <div class="col-4 col-sm-6 col-md-4 col-lg-3 p-2">
+                            <!-- <div class="col-4 col-sm-6 col-md-4 col-lg-3 p-2">
                                 <a href="#" class="text-decoration-none">
                                     <div class="card h-100 border-0">
                                         <div class="card-body text-center">
@@ -86,7 +86,7 @@
                                         </div>
                                     </div>
                                 </a>
-                            </div>
+                            </div> -->
 
                             <div class="col-4 col-sm-6 col-md-4 col-lg-3 p-2">
                                 <a href="{{url('pulsa/create')}}" class="text-decoration-none">

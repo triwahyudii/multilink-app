@@ -7,9 +7,9 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Edit Transfer</h4>
+                    <h4 class="card-title">Edit Tarik Tunai</h4>
                 </div>
-                <form action="{{ url('/admin/transfer/' . $data['id']) }}" method="post">
+                <form action="{{ url('/admin/tarik-tunai/' . $data['id']) }}" method="post">
                     @csrf
                     @method('put')
                     
@@ -26,7 +26,7 @@
                             </div>
                             <label class="pt-1">Nama Pengirim</label>
                             <div class="input-group">
-                                <input type="text" name="name" id="name" value="{{ $data['name'] }}" class="form-control input m-2 rounded-3" placeholder="Nama Pengirim">
+                                <input type="text" name="name" id="name" value="{{ $data['name'] }}" class="form-control input m-2 rounded-3" placeholder="Nama Pemilik">
                             </div>
                             <label class="pt-1">Nomor Rekening</label>
                             <div class="input-group">
@@ -36,16 +36,8 @@
                             <div class="input-group">
                                 <input type="text" name="total" id="total" value="{{ $data['total'] }}" class="form-control input m-2 rounded-3" placeholder="Total">
                             </div>
-                            <label class="pt-1">Nama Penerima</label>
-                            <div class="input-group">
-                                <input type="text" name="name_penerima" id="name_penerima" value="{{ $data['name_penerima'] }}" class="form-control input m-2 rounded-3" placeholder="Nama Penerima">
-                            </div>
-                            <label class="pt-1">Nomor Rekening Penerima</label>
-                            <div class="input-group">
-                                <input type="text" name="rekening_penerima" id="rekening_penerima" value="{{ $data['rekening_penerima'] }}" class="form-control input m-2 rounded-3" placeholder="Nomor Rekening Penerima">
-                            </div>
                             <div class="d-flex pt-3">
-                                <a href="{{ url('/admin/transfer/') }}" class="btn btn-secondary btn-sm justify-content-start me-2"><i class="fa-solid fa-arrow-left"></i> Back</a>
+                                <a href="{{ url('/admin/tarik-tunai/') }}" class="btn btn-secondary btn-sm justify-content-start me-2"><i class="fa-solid fa-arrow-left"></i> Back</a>
                                 <button class="btn btn-primary btn-sm bg-primary justify-content-end" type="submit"><i class="fa-solid fa-floppy-disk"></i> Save</button>
                             </div>
                         </div>

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->enum('bank', ['BRI', 'BCA', 'BNI', 'MANDIRI']);
             $table->string('nomor_tagihan');
             $table->string('name');
-            $table->bigInteger('total');
+            $table->string('total');
             $table->enum('status', ['Proses', 'Batal', 'Selesai']);
             $table->timestamps();
         });
