@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('user_id');
             $table->enum('nominal', ['500', '1000', '2000', '3000', ]);
             $table->enum('status', ['Proses', 'Batal', 'Selesai']);
-            $table->timestamps();
+            $table->timestamps(); 
         });
     }
 

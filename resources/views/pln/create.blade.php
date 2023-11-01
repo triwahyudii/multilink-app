@@ -16,6 +16,7 @@
                     <input type="text" name="name" id="name" class="form-control">
                 </div>
                 <div class="p-2">
+                    <label for="nominal">Nominal</label>
                     <select name="nominal" id="nominal" class="form-select">
                         <option selected disabled>Pilih Nominal Token</option>
                         <option value="20000">Rp 20.000</option>

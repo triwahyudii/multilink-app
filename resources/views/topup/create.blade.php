@@ -8,6 +8,7 @@
             <form action="{{ url('topup/store') }}" method="post">
                 @csrf
                 <div class="p-2">
+                    <label for="game">Game</label>
                     <select name="game" id="game" class="form-select">
                         <option selected disabled>Pilih Game</option>
                         <option value="Domino Higgs">Domino Higgs</option>
@@ -22,6 +23,7 @@
                     <input type="text" name="user_id" id="user_id" class="form-control">
                 </div>
                 <div class="p-2">
+                    <label for="nominal">Nominal</label>
                     <select name="nominal" id="nominal" class="form-select">
                         <option selected disabled>Pilih Nominal</option>
                         <option value="500"> 500 item</option>

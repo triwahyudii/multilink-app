@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminPlnController;
 use App\Http\Controllers\Admin\AdminPulsaController;
 use App\Http\Controllers\Admin\AdminSetorController;
 use App\Http\Controllers\Admin\AdminTarikController;
+use App\Http\Controllers\Admin\AdminTopupController;
 use App\Http\Controllers\Admin\AdminTransferController;
 use App\Http\Controllers\AsuransiController;
 use App\Http\Controllers\CicilanBank;
@@ -152,3 +153,12 @@ Route::get('admin/pln/edit/{id}', [AdminPlnController::class, 'edit']);
 Route::put('admin/pln/{id}', [AdminPlnController::class, 'update']);
 Route::delete('admin/pln/{id}', [AdminPlnController::class, 'destroy']);
 Route::get('admin/pln/{id}', [AdminPlnController::class, 'show']);
+
+//ADMIN TOPUP
+Route::get('admin/topup', [AdminTopupController::class, 'index']);
+Route::get('admin/topup/create', [AdminTopupController::class, 'create']);
+Route::post('admin/topup/store', [AdminTopupController::class, 'store']);
+Route::get('admin/topup/edit/{id}', [AdminTopupController::class, 'edit']);
+Route::put('admin/topup/{id}', [AdminTopupController::class, 'update']);
+Route::delete('admin/topup/{id}', [AdminTopupController::class, 'destroy']);
+Route::get('admin/topup/{id}', [AdminTopupController::class, 'show']);
