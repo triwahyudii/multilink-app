@@ -8,6 +8,7 @@
             <form action="{{ url('pulsa/store') }}" method="post">
                 @csrf
                 <div class="p-2">
+                    <label for="provider">Provider</label>
                     <select name="provider" id="provider" class="form-select">
                         <option selected disabled>Pilih Provider</option>
                         <option value="Indosat">Indosat</option>
@@ -19,9 +20,10 @@
                 </div>
                 <div class="p-2">
                     <label for="phone">Handphone</label>
-                    <input type="text" name="phone" id="phone" class="form-control">
+                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Handphone">
                 </div>
                 <div class="p-2">
+                    <label for="nominal">Nominal</label>
                     <select name="nominal" id="nominal" class="form-select">
                         <option selected disabled>Pilih Nominal Pulsa</option>
                         <option value="5000">Rp 5.000</option>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminPulsaController;
 use App\Http\Controllers\Admin\AdminSetorController;
 use App\Http\Controllers\Admin\AdminTarikController;
 use App\Http\Controllers\Admin\AdminTransferController;
@@ -132,3 +133,12 @@ Route::get('admin/setor-tunai/edit/{id}', [AdminSetorController::class, 'edit'])
 Route::put('admin/setor-tunai/{id}', [AdminSetorController::class, 'update']);
 Route::delete('admin/setor-tunai/{id}', [AdminSetorController::class, 'destroy']);
 Route::get('admin/setor-tunai/{id}', [AdminSetorController::class, 'show']);
+
+//ADMIN PULSA
+Route::get('admin/pulsa', [AdminPulsaController::class, 'index']);
+Route::get('admin/pulsa/create', [AdminPulsaController::class, 'create']);
+Route::post('admin/pulsa/store', [AdminPulsaController::class, 'store']);
+Route::get('admin/pulsa/edit/{id}', [AdminPulsaController::class, 'edit']);
+Route::put('admin/pulsa/{id}', [AdminPulsaController::class, 'update']);
+Route::delete('admin/pulsa/{id}', [AdminPulsaController::class, 'destroy']);
+Route::get('admin/pulsa/{id}', [AdminPulsaController::class, 'show']);
