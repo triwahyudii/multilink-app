@@ -8,6 +8,7 @@
             <form action="{{ url('cicilan-bank/store') }}" method="post">
                 @csrf
                 <div class="p-2">
+                    <label for="bank">Bank </label>
                     <select name="bank" id="bank" class="form-select">
                         <option selected disabled>Pilih Bank</option>
                         <option value="BRI">BRI</option>

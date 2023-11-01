@@ -99,10 +99,10 @@
                             </a>
                             <ul class="submenu ">
                                 <li class="submenu-item ">
-                                    <a href="{{ url('/admin/bayar-cicilan-bank/') }}">Cicilan Bank</a>
+                                    <a href="{{ url('/admin/bank/') }}">Cicilan Bank</a>
                                 </li>
                                 <li class="submenu-item ">
-                                    <a href="{{ url('/admin/bayar-cicilan-leasing/') }}">Cicilan Leasing</a>
+                                    <a href="{{ url('/admin/leasing/') }}">Cicilan Leasing</a>
                                 </li>
                             </ul>
                         </li>

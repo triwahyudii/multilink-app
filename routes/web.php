@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminBankController;
 use App\Http\Controllers\Admin\AdminPlnController;
 use App\Http\Controllers\Admin\AdminPulsaController;
 use App\Http\Controllers\Admin\AdminSetorController;
@@ -162,3 +163,14 @@ Route::get('admin/topup/edit/{id}', [AdminTopupController::class, 'edit']);
 Route::put('admin/topup/{id}', [AdminTopupController::class, 'update']);
 Route::delete('admin/topup/{id}', [AdminTopupController::class, 'destroy']);
 Route::get('admin/topup/{id}', [AdminTopupController::class, 'show']);
+
+//ADMIN CICILAN BANK
+Route::get('admin/bank', [AdminBankController::class, 'index']);
+Route::get('admin/bank/create', [AdminBankController::class, 'create']);
+Route::post('admin/bank/store', [AdminBankController::class, 'store']);
+Route::get('admin/bank/edit/{id}', [AdminBankController::class, 'edit']);
+Route::put('admin/bank/{id}', [AdminBankController::class, 'update']);
+Route::delete('admin/bank/{id}', [AdminBankController::class, 'destroy']);
+Route::get('admin/bank/{id}', [AdminBankController::class, 'show']);
+
+//ADMIN CICILAN LEASING

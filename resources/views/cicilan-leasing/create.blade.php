@@ -8,6 +8,7 @@
             <form action="{{ url('cicilan-leasing/store') }}" method="post">
                 @csrf
                 <div class="p-2">
+                <label for="leasing">Leasing</label>
                     <select name="leasing" id="leasing" class="form-select">
                         <option selected disabled>Pilih Leasing</option>
                         <option value="FIF">FIF</option>
