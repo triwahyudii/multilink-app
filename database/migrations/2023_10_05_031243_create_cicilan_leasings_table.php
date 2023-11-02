@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('total');
             $table->enum('status', ['Proses', 'Batal', 'Selesai']);
-            $table->timestamps();
+            $table->timestamps(); 
         });
     }
 

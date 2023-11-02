@@ -31,7 +31,7 @@ return new class extends Migration
             $table->string('nomor_rekening');
             $table->string('pemilik_rekening');
             $table->enum('status', ['Proses', 'Batal', 'Selesai']);
-            $table->timestamps();
+            $table->timestamps();  
         });
     }
 
