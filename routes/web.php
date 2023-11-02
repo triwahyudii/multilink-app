@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminBankController;
+use App\Http\Controllers\Admin\AdminLeasingController;
 use App\Http\Controllers\Admin\AdminPlnController;
 use App\Http\Controllers\Admin\AdminPulsaController;
 use App\Http\Controllers\Admin\AdminSetorController;
@@ -174,3 +175,10 @@ Route::delete('admin/bank/{id}', [AdminBankController::class, 'destroy']);
 Route::get('admin/bank/{id}', [AdminBankController::class, 'show']);
 
 //ADMIN CICILAN LEASING
+Route::get('admin/leasing', [AdminLeasingController::class, 'index']);
+Route::get('admin/leasing/create', [AdminLeasingController::class, 'create']);
+Route::post('admin/leasing/store', [AdminLeasingController::class, 'store']);
+Route::get('admin/leasing/edit/{id}', [AdminLeasingController::class, 'edit']);
+Route::put('admin/leasing/{id}', [AdminLeasingController::class, 'update']);
+Route::delete('admin/leasing/{id}', [AdminLeasingController::class, 'destroy']);
+Route::get('admin/leasing/{id}', [AdminLeasingController::class, 'show']);
